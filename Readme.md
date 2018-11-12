@@ -1,7 +1,9 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Артём Шорец](https://up.htmlacademy.ru/htmlcss/23/user/914617).
-* Наставник: [Артём Ильченко] (https://up.htmlacademy.ru/htmlcss/23/user/375383).
+
+* Наставник: [Ильченко Артём Владимирович] (https://up.htmlacademy.ru/htmlcss/23/user/375383).
+
 
 ---
 
