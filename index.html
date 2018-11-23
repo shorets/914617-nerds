@@ -5,6 +5,7 @@
 		<title>HTML Academy: Нёрдс</title>
 	</head>
 	<body>
+		<!--header-->
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a href="index.html" class="main-header-logo">
@@ -18,12 +19,14 @@
 				<a href="#" class="basket-link"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">Корзина</a>
 			</nav>
 		</header>
+		<!--Main-->
 		<main class="main-container">
 			<h1 class="visually-hidden">Дизайн студия «Нёрдс»</h1>
 			<section class="slide"><b>Долго дорого<br>скрупулезно</b>
 				<p> Математически выверенный дизайн<br>для вашего сайта или мобильного приложения</p>
 				<a href="#" class="slide">Узнать больше</a>
 			</section>
+			<!--Services-->
 			<section class="services">
 				<section class="site">
 					<img src="img/site.jpg" width="300" height="146" alt="Веб-сайты">
@@ -44,6 +47,7 @@
 					<a href="#" class="button">Заказать</a>
 				</section>
 			</section>
+			<!--info-->
 			<section class="info">
 				<section class="service-list">
 					<h2 class="visually-hidden">услуги</h2>
@@ -55,7 +59,7 @@
 						<li>Мобильных приложений для iOS и Android</li>
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
 					</ul>
-				</section>
+				</section>			
 				<section class="nerds">
 					<h2 class="visually-hidden">информация </h2>
 					<img src="img/nerds-logo.png" width="360" height="208" alt="Фоновая картинка Нёрдс">
@@ -83,14 +87,21 @@
 				<a href="#"><img src="img/logo-mishka.png" width="173" height="84" alt="mishka"></a>
 			</section>
 		</section>
-		<section class="maps">
+		</section>
+		<!--Map-->	
+		<section class="map">
 			<img src="img/map.jpg" width="1440" height="416" alt="Карта">
-			<h2>NЁRDS DESIGN STUDIO</h2>
+		<!--Contacts--> 
+		<section class="contacts">	
+		   <h2 class="visually-hidden">Контактная информация</h2>	
+		   <h3>NЁRDS DESIGN STUDIO</h3>
 			<p>191186,Санкт-Петербург,<br>ул.Б.Конюшенная,д. 19/8</p>
-			<p>тел. +7(812) 275-75-75</p>
+			<p>тел.<a href="tel:+78122757575">+7(812) 275-75-75</a></p>
 			<a href="#" class="button" >Напишите нам</a>
 		</section>
+		</section>
 	</main>
+	<!--Footer-->
 	<footer class="main-footer">
 		<section class="footer-social">
 			<b>Давайте дружить,это выгодно!</b>
@@ -102,5 +113,24 @@
 			<li><a href="#" class="social-button"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
 		</ul>
 	</footer>
+	<section class="modal-message">
+		<!--Form-->
+		<form class="message-info" action="https://echo.htmlacademy.ru" method="post">
+		  	<h2>Напишите нам</h2>
+			  <p class="message-name">
+          	  	<label for="message-name">Ваше имя:</label>
+           	  	<input id="message-name" type="text" name="name"  placeholder="Имя Фамилия" aria-label="Поле ввода имени и фамилии">
+         	 </p>
+          	  <p class="message-email">
+          	  	<label for="message-email">Ваш e-mail:</label>
+          	  	<input id="message-email" type="email" name="email" placeholder="email@example.com" aria-label="Поле ввода электронной почты">
+          	 </p>
+          	 <p class="message-text">
+          	 	<label for="message-text">Текст письма:</label>
+          	 	<textarea id="message-text" name="text" placeholder="В свободной форме" aria-label="Поле ввода вашего сообщения в свобойдной форме"></textarea>
+          	 </p>
+          	 	<input type="submit" id="message-submit" name="submit" class="message-submit" value="Отправить">
+        </form>
+    </section>
 </body>
 </html>
