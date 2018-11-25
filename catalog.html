@@ -28,6 +28,19 @@
       <section class="filter-form">
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
+            <legend>Стоимость:</legend>
+            <div class="price-slider">
+              <div class="min-value"></div>
+              <div class="max-value"></div>
+            </div>
+            <div class="from-and-to">
+              <label for="min-price">ОТ</label>
+              <input class="min-price" type="text" value="0" id="min-price">
+              <label for="max-price">ДО</label>
+              <input class="max-price" type="text" value="15 000" id="max-price">
+            </div>
+          </fieldset>
+          <fieldset>
           <legend>Сетка:</legend>
           <ul>
              <li class="filter-option">
@@ -72,6 +85,8 @@
            <a href="#" class="filter-sort">По цене</a>
            <a href="#" class="filter-sort">По типу</a>
            <a href="#" class="filter-sort">По названию</a>
+           <a href="#" class="triangle"></a>
+           <a href="#" class="triangle"></a>
       </section>
       <!--catalog-->
       <section class="catalog">
