@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* НАВИГАЦИЯ */
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+	border-bottom: 2px solid #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+	color: #a6a6a6;
+}
+
+/*КОНТЕНТ*/
+
+/*------------------------------------КАТАЛОГ------------------------------------*/
+
+.title {	
+  background-color: #eeeeee;
+}
+.title h1 {	
+  margin: 0;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+/*ФИЛЬТР*/
+
+.filter-form fieldset {
+	border: 0;
+}
+
+.filter-form legend {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.filter-form ul {
+	list-style: none;
+	line-height: 20px;
+}
+.filter-form label {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.filter-input:hover + label,
+.filter-input:focus + label {
+	color: #283136;
+}
+.filter-input:disabled + label {
+	color: #283136;
+
+	opacity: 0.5;
+}
+.filter-button {
+	background-color: #eeeeee;
+	color: #000000;
+ 	font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	border: none;
+}
+.filter-button:hover {
+    background-color: #dfdfdf;
+}
+.filter-button:active {
+    color: #959595;
+	background-color: #d5d5d5;
+}
+
+
+/*СОРТИРОВКА*/
+
+.filter-sort h2 {
+	font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.filter-sort a {
+	font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+	color: #000000;
+}
+
+/*СПИСОК ШАБЛОНОВ*/
+
+.catalog-list {
+	list-style: none;
+}
+.catalog-item h3 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.catalog-item p {
+	font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.catalog-item {
+	background-color: #ffffff;
+	box-shadow: 
+}
+
+.item {
+	background-color: #eeeeee;
+}
+
+/*КНОПКА 9900*/
+ .price {
+ 	background-color: #fb565a;
+ 	color: #ffffff;
+ 	font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	border: none;
+ }
+
+.price:hover {
+    background-color: #e74246;
+}
+.price:active {
+    color: #ffffff;
+	background-color: #d7373b;
+}
+
+ /*КНОПКИ ПАГИНАЦИЯ*/
+
+ .number {
+ 	background-color: #eeeeee;
+ 	font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	border: none;
+ }
+ .next a {
+ 	color: #000000;
+ }
+.number:hover {
+    background-color: #dfdfdf;
+    color: #000000;
+}
+.number:active {
+    color: #959595;
+	background-color: #d5d5d5;
+}
+.number:focus {
+	background-color: #ffffff;
+	color: #000000 ;
+}
+
+
+
+/*-----------------------------ГЛАВНАЯ----------------------------------------*/
+
+.services {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.services h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+
+}
+
+/* КНОПКИ */
+
+.button {
+	font: inherit;
+	font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+	border: none;
+}
+
+.button-red {
+	background-color: #fb565a;
+}
+.button-red:hover {
+    background-color: #e74246;
+}
+.button-red:active {
+	color: #e37376;
+	background-color: #d7373b;
+}
+
+
+.button-green {
+   background-color: #00ca74;
+}
+.button-green:hover {
+    background-color: #00bc6c;
+}
+.button-green:active {
+	color: #4dc491;
+	background-color: #00aa62;
+}
+
+
+.button-yellow {
+   background-color: #efc84a;
+}
+.button-yellow:hover {
+   background-color: #eab534;
+}
+.button-yellow:active {
+   color: #edc265;
+   background-color: #e5a722;
+}
+
+/* ФУТЕР */
+.social {
+	list-style: none;
+}
+.footer-social b {
+	font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.footer-social p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+
+
+
+
+
