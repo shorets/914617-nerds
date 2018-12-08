@@ -32,20 +32,23 @@
 				<!--Filter form-->
 				<section class="filter-form">
 					<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-						<fieldset>
-							<legend class="price-title">Стоимость:</legend>
+						<fieldset class="price-filter">
+							<legend>Стоимость:</legend>
 							<div class="price-slider">
-								<div class="min-value"></div>
-								<div class="max-value"></div>
-							</div>
-							<div class="from-and-to">
-								<label for="min-price">ОТ</label>
-								<input class="min-price" type="text" value="0" id="min-price">
-								<label for="max-price">ДО</label>
-								<input class="max-price" type="text" value="15 000" id="max-price">
+								<div class="range-slider">
+									<div class="scale">
+										<div class="way"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+									<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+								</div>
 							</div>
 						</fieldset>
-						<fieldset>
+						<fieldset class="grid-filter">
 							<legend>Сетка:</legend>
 							<ul>
 								<li class="filter-option">
@@ -62,7 +65,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<fieldset>
+						<fieldset class="features-filter">
 							<legend>Особенности:</legend>
 							<ul>
 								<li class="filter-option">
@@ -101,9 +104,9 @@
 							<a href="#" class="filter-sort-links"><span>По типу</span></a>
 							<a href="#" class="filter-sort-links"><span>По названию</span></a>
 							<div class="triangle">
-							<a href="#" class="triangle-down"></a>
-							<a href="#" class="triangle-up"></a>
-						</div>
+								<a href="#" class="triangle-down"></a>
+								<a href="#" class="triangle-up"></a>
+							</div>
 						</div>
 					</section>
 					<!--catalog-->
@@ -213,7 +216,7 @@
 					<h2 class="visually-hidden">Контактная информация</h2>
 					<h3>NЁRDS DESIGN STUDIO</h3>
 					<p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д.  19/8</p>
-					<p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+					<p class="phone">тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
 					<a href="#" class="btn" >Напишите нам</a>
 				</section>
 			</section>
@@ -221,12 +224,12 @@
 		<!--footer-->
 		<footer class="main-footer">
 			<section class="social-networks">
-			<ul class="social">
-				<li><a href="#" class="social-button"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
-				<li><a href="#" class="social-button"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-				<li><a href="#" class="social-button"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
-			</ul>
-	     	</section>
+				<ul class="social">
+					<li><a href="#" class="social-button"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
+					<li><a href="#" class="social-button"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+					<li><a href="#" class="social-button"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
+				</ul>
+			</section>
 			<section class="footer-social">
 				<b>Давайте дружить, это выгодно!</b>
 				<p class="sale">Скидка 10% для друзей из социальных сетей</p>

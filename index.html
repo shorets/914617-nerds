@@ -166,7 +166,9 @@
 	<section class="modal-message">
 		<form class="message-info" action="https://echo.htmlacademy.ru" method="post">
 			<h2>Напишите нам</h2>
-			<div class="message-name">
+			<button class="popup-close" type="button" aria-label="Закрыть форму"></button>
+			<div class="form-registration">
+		<div class="message-name">
 				<label for="message-name">Ваше имя:</label>
 				<input id="message-name" type="text" name="name"  placeholder="Имя Фамилия" aria-label="Поле ввода имени и фамилии">
 			</div>
@@ -174,9 +176,10 @@
 				<label for="message-email">Ваш e-mail:</label>
 				<input id="message-email" type="email" name="email" placeholder="email@example.com" aria-label="Поле ввода электронной почты">
 			</div>
+		</div>
 			<div class="message-text">
 				<label for="message-text">Текст письма:</label>
-				<textarea id="message-text" name="text" placeholder="В свободной форме" aria-label="Поле ввода вашего сообщения в свобойдной форме"></textarea>
+				<textarea id="message-text" name="text" cols="30" rows="4" placeholder="В свободной форме" aria-label="Поле ввода вашего сообщения в свобойдной форме"></textarea>
 			</div>
 			<input type="submit" id="message-submit" name="submit" class="message-submit" value="Отправить">
 		</form>

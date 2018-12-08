@@ -305,20 +305,16 @@ a.navigation-link:hover {
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
   list-style: none;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 
-/* .services-item:not(:nth-child(3n)) {
+.services-item:not(:nth-child(3n)) {
   margin-right: 100px;
-} */
- .services-item:nth-child(3n){
-margin-right: 60px;
-} 
+}
 
 
 .services-item {
@@ -395,7 +391,7 @@ margin-right: 60px;
 }
 
 /*-----------------ИНФОРМАЦИЯ-------------------*/
-.info::before {
+/* .info::before {
   content: ""; 
   position: absolute; 
 
@@ -405,10 +401,11 @@ margin-right: 60px;
   left: 0;
 
   background-color: #eeeeee; 
-}
+} */
 
 .info {
-  padding-bottom: 64px;
+  border-top: 2px solid #eeeeee;
+  padding-bottom: 62px;
   position: relative;
   width: 1160px;
   margin: 0 auto;
@@ -524,7 +521,8 @@ margin-right: 60px;
   font-size: 16px;
   line-height: 18px;
 }
-.info::after {
+
+/* .info::after {
   content: ""; 
   position: absolute; 
 
@@ -532,17 +530,17 @@ margin-right: 60px;
   height: 2px; 
   bottom: 0;
   background-color: #eeeeee; 
-}
+} */
 /*------------------REFERENCES-BLOCK----------------*/
 .partners {
   position: relative;
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 83px;
+  margin-bottom: 78px;
   position: relative;
 }
 
-.partners::after {
+/* .partners::after {
   content: ""; 
   position: absolute; 
 
@@ -552,9 +550,11 @@ margin-right: 60px;
   left: 0;
 
   background-color: #eeeeee; 
-}
+} */
 
 .references-block {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -614,17 +614,19 @@ background-color: #eeeeee;
 }
 
 /*ФИЛЬТР*/
+
 .filter-form {
   width: 261px;
 }
 
 .filter-form fieldset {
-	border: 0;
+  border: 0;
+  padding: 0;
 }
 
 .filter-form legend {
   font-size: 18px;
-  line-height: 18px;
+  line-height: 10px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -632,8 +634,9 @@ background-color: #eeeeee;
   margin-bottom: 56px;
 }
 .filter-form ul {
-	list-style: none;
-	line-height: 20px;
+  padding-left: 35px;
+  list-style: none;
+  line-height: 40px;
 }
 .filter-form label {
   font-size: 16px;
@@ -649,36 +652,154 @@ background-color: #eeeeee;
 
 .filter-input:hover + label,
 .filter-input:focus + label {
-	color: #283136;
+  color: #283136;
 }
 .filter-input:disabled + label {
-	color: #283136;
+  color: #283136;
 
-	opacity: 0.5;
+  opacity: 0.5;
 }
 .filter-button {
   display: inline-block;
-	background-color: #eeeeee;
-	color: #000000;
-  padding: 15px 60px;
- 	font-size: 16px;
+  background-color: #eeeeee;
+  color: #000000;
+  padding: 17px 89px;
+  font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-	text-align: center;
-	vertical-align: middle;
-	text-transform: uppercase;
-	border: none;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
 }
 .filter-button:hover {
+  cursor: pointer;
   background-color: #dfdfdf;
 }
 .filter-button:active {
-	background-color: #d5d5d5;
+  background-color: #d5d5d5;
 }
 .filter-button span:active {
   opacity: 0.3;
 }
 
+/* ============СТОИМОСТЬ============= */
+.price-filter {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 260px; 
+  margin-top: 9px;
+}
+
+.price-slider {
+  width: 260px;
+  margin-top: 56px;
+}
+
+.price-filter legend {
+  font-size: 18px;
+  line-height: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-slider {
+  position: relative;
+  
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  background-color: #f1f1f1;
+  
+  border-radius: 5px;
+}
+
+.range-slider .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-slider .way {
+  height: 2px;
+  background: #00ca74;
+}
+
+.way {
+  margin-left: 0%;
+  width: 70%
+}
+
+.range-slider .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-slider .toggle-min {
+  left: 18px;
+}
+
+.range-slider .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+/* ================СЕТКА================= */
+
+.grid-filter {
+  margin-top: 69px;
+}
+
+/* ==============ОСОБЕННОСТИ============= */
+
+.features-filter {
+  margin-top: 28px;
+  margin-bottom: 24px;
+}
 
 /*-----------------СОРТИРОВКА---------------*/
 
@@ -734,6 +855,7 @@ background-color: #eeeeee;
 }
 
 .triangle-down:hover {
+  cursor: pointer;
   opacity: 0.6;
 }
 .triangle-down:active {
@@ -741,6 +863,7 @@ background-color: #eeeeee;
 }
 
 .triangle-up:hover {
+  cursor: pointer;
   opacity: 0.6;
 }
 .triangle-up:active {
@@ -748,6 +871,7 @@ background-color: #eeeeee;
 }
 
 .filter-sort span:hover {
+  cursor: pointer;
   opacity: 0.6;
 }
 .filter-sort span:active {
@@ -768,10 +892,11 @@ background-color: #eeeeee;
   width: 760px;
 }
 .catalog-item {
+  overflow: hidden;
   position: relative;
   width: 360px;
-  min-height: 576px;
-  margin-bottom: 26px;
+  height: 616px;
+  margin-bottom: 33px;
   background-color: #ffffff;
   box-shadow: 
 }
@@ -779,6 +904,7 @@ background-color: #eeeeee;
   margin-right: 0;
 }
 .catalog-list {
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -788,6 +914,7 @@ background-color: #eeeeee;
   margin-bottom: 26px;
 }
 .card-head {
+  transition: 0.4s all ease;
   height: 29px; 
   padding-top: 12px; 
   padding-left: 16px; 
@@ -805,6 +932,7 @@ background-color: #eeeeee;
 }
 
 .catalog-item:hover .item {
+  transform: translateY(0);
 }
 
 .card-head-item {
@@ -829,6 +957,8 @@ background-color: #eeeeee;
 }
 
 .item {
+  transform: translateY(100%);
+  transition: 0.4s all ease;
   position: absolute; 
   bottom: 0; 
   left: 0; 
@@ -854,6 +984,7 @@ background-color: #eeeeee;
 	text-transform: uppercase;
 	border: none;
   border-radius: 3px;
+  cursor: pointer;
  }
 
 .price:hover {
@@ -923,6 +1054,7 @@ background-color: #eeeeee;
 }
 .active-navigation-link:active,
  .active-navigation-link:hover {
+  cursor: pointer;
   background-color: #ffffff;
   border: 2px solid #dbdbdb;
   opacity: 1;
@@ -940,7 +1072,8 @@ background-color: #eeeeee;
 /*-----------------------КОНТАКТЫ-------------------*/
 .contacts {
   box-sizing: border-box;
-  top: 53px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 140px;
   width: 320px;
   min-height: 308px;
@@ -966,9 +1099,10 @@ background-color: #eeeeee;
   line-height: 18px;
   font-weight: 400;
 }
-.phone {
-
+.phone a {
+color: #000000;
 }
+
 .btn {
   margin-top: 20px;
   font-size: 16px;
@@ -976,7 +1110,7 @@ background-color: #eeeeee;
   font-weight: 500;
   display: block;
   width: 217px;
-  padding: 15px 0;
+  padding: 18px 0px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -1059,7 +1193,165 @@ background-color: #eeeeee;
  .social-button:active img{
   opacity: 0.3;
 }
+/*========================ПОПАП==================== */
+ .modal-message {
+  position: relative;
+  width: 960px; 
+  padding-top: 73px; 
+  padding-right: 100px; 
+  padding-bottom: 84px; 
+  padding-left: 100px; 
+  background-color: #ffffff;  
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75); 
+}
 
-.modal-message {
-  display: none;
+ .message-info {
+  width: 760px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ .form-registration {
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .message-name {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+  margin-top: 0
+ }
+
+.message-email {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+  margin-top: 0;
+ }
+
+ .modal-message h2 {
+  margin-top: 0;
+  margin-bottom: 33px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+ }
+
+ .modal-message label {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+ }
+
+.message-name input {
+  overflow: visible;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.message-email input {
+  overflow: visible;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.modal-message input {
+  border: 2px solid #d7dcde;
+}
+
+.modal-message textarea {
+  border: 2px solid #d7dcde;
+}
+
+.message-text {
+  width: 760px;
+  margin-bottom: 47px;
+}
+
+.message-text textarea {
+  overflow: auto;
+  width: 754px;
+  min-height: 118px;
+  padding-top: 10px;
+}
+
+.modal-message input:hover {
+  border-color: #b4b9bb;
+}
+
+.modal-message textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.modal-message input:focus {
+  border-color: #000000;
+}
+
+.modal-message textarea:focus {
+  border-color: #000000;
+}
+
+.modal-message input:invalid {
+  border-color: red;
+}
+
+
+.popup-close {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+  background-image: url(../img/close-cross.svg);
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  background-color: #ffffff;
+  border: none;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  opacity: 1;
+}
+
+.popup-close:active {
+  opacity: 0.1;
+}
+
+.modal-message input:hover {
+
+}
+
+
+ .message-submit {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  display: block;
+  width: 217px;
+  padding: 18px 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+ }
+ .message-submit {
+  background-color: #fb565a;
+}
+.message-submit:hover {
+  background-color: #e74246;
+}
+.message-submit:active {
+  background-color: #d7373b;
 }
