@@ -36,6 +36,10 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+input[type="submit"] {
+  -webkit-appearance: none;
+}
 /*-------------------ЛОГОТИП--------------------*/
 .main-header {
   background-color: #eeeeee;
@@ -288,6 +292,7 @@ a.navigation-link:hover {
 }
 
 .button-slider {
+  -webkit-appearance: none;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -332,11 +337,9 @@ a.navigation-link:hover {
   margin-bottom: 58px;
 }
 
-
 .services-item:not(:nth-child(3n)) {
   margin-right: 100px;
 }
-
 
 .services-item {
   width: 300px;
@@ -355,6 +358,7 @@ a.navigation-link:hover {
 }
 
 .button {
+  -webkit-appearance: none;
   display: inline-block; 
   padding: 13px 40px; 
   font-weight: 500;   
@@ -381,8 +385,6 @@ a.navigation-link:hover {
   opacity: 0.3;
 }
 
-
-
 .button-green {
   background-color: #00ca74;
 }
@@ -397,8 +399,6 @@ a.navigation-link:hover {
 .button-green:active span {
   opacity: 0.3;
 }
-
-
 
 .button-yellow {
   background-color: #efc84a;
@@ -671,11 +671,12 @@ a.navigation-link:hover {
 .filter-input:focus + label {
   color: #283136;
 }
+
 .filter-input:disabled + label {
   color: #283136;
-
   opacity: 0.5;
 }
+
 .filter-button {
   display: inline-block;
   background-color: #eeeeee;
@@ -688,6 +689,7 @@ a.navigation-link:hover {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+  -webkit-appearance: none;
 }
 .filter-button:hover {
   cursor: pointer;
@@ -975,11 +977,11 @@ a.navigation-link:hover {
 .triangle-up:active {
   opacity: 0.3;
 }
-.filter-sort span:hover {
+.filter-sort-links:hover {
   cursor: pointer;
   opacity: 0.6;
 }
-.filter-sort span:active {
+.filter-sort-links:active {
   opacity: 0.3;
 }
 
@@ -1109,6 +1111,7 @@ a.navigation-link:hover {
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  -webkit-appearance: none;
  }
 
 .price:hover {
@@ -1264,6 +1267,7 @@ a.navigation-link:hover {
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
+  -webkit-appearance: none;
 }
 .btn {
   background-color: #fb565a;
@@ -1282,7 +1286,7 @@ a.navigation-link:hover {
 
 /*-----------------------ФУТЕР----------------------*/
 .social-networks {
-  margin-top: -13px;
+  margin-top: -7px;
 }
 
 .social {
@@ -1292,11 +1296,13 @@ a.navigation-link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 136px;
+  flex-wrap: wrap;
+  padding-right: 123px;
 }
 
-.social li:not(:last-child) {
+.social li {
   margin-right: 12px;
+  margin-bottom: 10px;
 }
 
 .footer-social b {
@@ -1353,6 +1359,58 @@ a.navigation-link:hover {
   opacity: 0.3;
 }
 /*========================ПОПАП==================== */
+ 
+@keyframes bounce {
+  
+ 0% { 
+transform: translate(-50%, -50%); 
+} 
+
+50% { 
+transform: translate(-50%, 10%); 
+} 
+
+70% { 
+transform: translate(-50%, 0); 
+} 
+
+90% { 
+transform: translate(-50%, 10%); 
+} 
+
+100% { 
+transform: translate(-50%, 0); 
+}
+
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateY(-50%);
+  }
+
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-55%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-45%, -50%);
+  }
+}
+
  .modal-message {
   display: none;
   position: fixed;
@@ -1366,7 +1424,16 @@ a.navigation-link:hover {
   padding-left: 100px; 
   background-color: #ffffff;  
   -webkit-box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);  
-  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75); 
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.2s;
 }
 
  .message-info {
@@ -1497,6 +1564,7 @@ a.navigation-link:hover {
 
 
 .popup-close {
+  -webkit-appearance: none;
   position: absolute;
   top: 80px;
   right: 90px;
@@ -1519,6 +1587,7 @@ a.navigation-link:hover {
 }
 
 .message-submit {
+  -webkit-appearance: none;
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
