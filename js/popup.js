@@ -4,7 +4,7 @@ var popup = document.querySelector(".modal-message");
 
 var close = popup.querySelector(".popup-close");
 
-    var form = popup.querySelector("form");
+var form = popup.querySelector("form");
 var login = popup.querySelector("[name=login]");
 var email = popup.querySelector("[name=email]");
 
