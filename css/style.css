@@ -701,7 +701,7 @@ a.navigation-link:hover {
   background-color: #d5d5d5;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
-.filter-button span:active {
+.filter-button:active span {
   opacity: 0.3;
 }
 
@@ -850,6 +850,11 @@ a.navigation-link:hover {
   opacity: 1;
 }
 
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled + label::after {
+  opacity: 0.3;
+}
+
 
 /* ==============ОСОБЕННОСТИ============= */
 
@@ -860,9 +865,6 @@ a.navigation-link:hover {
 
  .filter-option label {
   position: relative;
-
-  display: inline-block;
-
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -903,6 +905,10 @@ a.navigation-link:hover {
   opacity: 1;
 }
 
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:disabled + label::after {
+  opacity: 0.3;
+}
 
 /*-----------------СОРТИРОВКА---------------*/
 
@@ -925,6 +931,8 @@ a.navigation-link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 361px;
+  flex-wrap: wrap;
 }
 .filter-sort h2 {
   font-size: 18px;
@@ -1193,11 +1201,12 @@ a.navigation-link:hover {
   border: 2px solid #dbdbdb;
 }
 .active-navigation-link:active,
- .active-navigation-link:hover {
+.active-navigation-link:hover {
   cursor: pointer;
   background-color: #ffffff;
   border: 2px solid #dbdbdb;
   opacity: 1;
+  box-shadow: none;
 }
 
 /*=========================================================================*/
@@ -1208,6 +1217,10 @@ a.navigation-link:hover {
   width: 1440px;
   margin: 0 auto;
   margin-bottom: 68px;
+}
+
+iframe {
+  border: 0;
 }
 /*-----------------------КОНТАКТЫ-------------------*/
 .contacts {
