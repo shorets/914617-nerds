@@ -353,14 +353,39 @@ a.navigation-link:hover {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
+
+.background-site {
+  background-color: #fb565a;
+  background-image: url(../img/site.jpg);
+  height: 146px;
+}
+
+
+.background-app {
+  background-color: #00ca74;
+  background-image: url(../img/app.jpg);
+  height: 146px;
+}
+
+.background-presentation {
+  background-color: #efc849;
+  background-image: url(../img/presentation.jpg);
+  height: 146px;
+}
+
 .services h3 {
   font-size: 24px;
   line-height: 21px;
   font-weight: 700;
   margin-bottom: 19px;
+  padding-top: 7px;
 }
+
 .service-content {
+  width: 278px;
   margin-bottom: 33px;
 }
 
@@ -688,7 +713,6 @@ a.navigation-link:hover {
 .filter-button {
   display: inline-block;
   vertical-align: top;
-  vertical-align: top;
   background-color: #eeeeee;
   color: #000000;
   padding: 17px 89px;
@@ -985,8 +1009,8 @@ a.navigation-link:hover {
 .triangle-down {
   margin: 0;
   padding: 0;
-  padding-left: 10px; 
-  margin-right: 20px;
+  padding-left: 11px; 
+  margin-right: 18px;
   background-image: url("../img/icon-down-dir.svg"); 
   background-repeat: no-repeat; 
   background-position-y: 1px; 
@@ -996,19 +1020,15 @@ a.navigation-link:hover {
 .triangle-up {
   margin: 0;
   padding: 0;
-  padding-left: 10px; 
+  padding-left: 11px; 
   background-image: url("../img/icon-up-dir.svg"); 
   background-repeat: no-repeat; 
   background-position-y: 1px; 
   background-size: 11px 10px;
 }
 
-.triangle-down:hover {
-  cursor: pointer;
-  opacity: 0.6;
-}
-.triangle-down:active {
-  opacity: 0.3;
+.triangle-down {
+  opacity: 1;
 }
 .triangle-up:hover {
   cursor: pointer;
@@ -1021,12 +1041,6 @@ a.navigation-link:hover {
 .triangle-up {
   opacity: 0.3;
 }
-
-.filter-sort-links {
-  cursor: pointer;
-}
-
-
 
 /*-----------------------------СПИСОК ШАБЛОНОВ*------------------------*/
 
@@ -1256,7 +1270,6 @@ a.navigation-link:hover {
 }
 .active-navigation-link:active,
 .active-navigation-link:hover {
-  cursor: pointer;
   background-color: #ffffff;
   border: 2px solid #dbdbdb;
   opacity: 1;
@@ -1271,6 +1284,9 @@ a.navigation-link:hover {
   width: 1440px;
   margin: 0 auto;
   margin-bottom: 68px;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 iframe {
@@ -1398,7 +1414,9 @@ iframe {
 }
 
 .footer-social {
-  height: 80px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .social a {
