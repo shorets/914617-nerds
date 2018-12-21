@@ -5,7 +5,7 @@
 		<title>HTML Academy: Нёрдс</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/minifier.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<!--header-->
@@ -90,6 +90,7 @@
 			<!--info-->
 			<section class="info">
 				<section class="service-list">
+					<h2 class="visually-hidden">Виды услуг</h2>
 					<section class="description-service">
 						<h2 class="visually-hidden">услуги</h2>
 						<h3 class="info-title">Мы — маленькая, но гордая
@@ -123,7 +124,7 @@
 					</ul>
 				</section>
 			</section>
-			<!--------REFERENCES-BLOCK------->
+			<!--REFERENCES-BLOCK-->
 			<section class="partners">
 				<h3 class="visually-hidden">Наши партнёры</h3>
 				<ul class="references-block">
@@ -143,15 +144,21 @@
 			</section>
 			<!--Map-->
 			<section class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d676.6529804149507!2d30.32244085688115!3d59.93882007464017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1544727978150" width="1440" height="416" allowfullscreen></iframe>
-				<!--Contacts-->
-				<section class="contacts">
-					<h2 class="visually-hidden">Контактная информация</h2>
-					<h3>NЁRDS DESIGN STUDIO</h3>
-					<p class="address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д.  19/8</p>
-					<p class="phone">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
-					<a href="#" class="btn"><span>Напишите нам</span></a>
-				</section>
+				<h2 class="visually-hidden">Как нас найти</h2>
+				<div class="map-item">
+					<section class="contacts">
+						<h2 class="visually-hidden">Контактная информация</h2>
+						<h3>NЁRDS DESIGN STUDIO</h3>
+						<p class="address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+						<p class="phone">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
+						<a href="#" class="btn"><span>Напишите нам</span></a>
+					</section>
+				</div>
+				<div class="map-select">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d676.6529804149507!2d30.32244085688115!3d59.93882007464017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1544727978150"
+					height="418" allowfullscreen></iframe>
+					<img src="img/map.jpg" width="1440" height="418" alt="Карта">
+				</div>
 			</section>
 		</main>
 		<!--Footer-->
@@ -171,6 +178,7 @@
 				</ul>
 			</section>
 			<section class="footer-social">
+				<h2 class="visually-hidden">Скидки для друзей</h2>
 				<b>Давайте дружить, это выгодно!</b>
 				<p class="sale">Скидка 10% для друзей из социальных сетей</p>
 			</section>

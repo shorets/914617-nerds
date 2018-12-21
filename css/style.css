@@ -831,7 +831,7 @@ a.navigation-link:hover {
   padding: 8px 10px;
   margin-left: 10px;
   
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
@@ -1262,7 +1262,7 @@ a.navigation-link:hover {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 62px;
 }
 .active-navigation-link {
   background-color: #ffffff;
@@ -1279,20 +1279,56 @@ a.navigation-link:hover {
 /*=========================================================================*/
 
 /*-----------------------КАРТА----------------------*/
-.map {
+.map { 
   position: relative;
-  width: 1440px;
-  margin: 0 auto;
-  margin-bottom: 68px;
-  background-image: url(../img/map.jpg);
-  background-repeat: no-repeat;
+  margin: 0 auto; 
+  margin-bottom: 71px; 
+  height: 419px;
+} 
+
+.map-item { 
+  background-repeat: no-repeat; 
   background-position: 0 0;
+  margin: 0 auto; 
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+} 
+
+.map-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 iframe {
-  border: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  height: 418px;
+  z-index: 2;
+  width: 100%;
+  border: 0; 
+}
+
+.map-select  img{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  object-fit: cover
 }
 /*-----------------------КОНТАКТЫ-------------------*/
+.contacts-info {
+  position: relative;
+}
+
 .contacts {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1300,7 +1336,7 @@ iframe {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  left: 140px;
+  left: 0px;
   width: 320px;
   min-height: 308px;
   padding: 51px;
@@ -1316,6 +1352,7 @@ iframe {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  z-index: 3;
 }
 
 .contacts h3 {
@@ -1512,6 +1549,7 @@ transform: translate(-50%, 0);
   background-color: #ffffff;  
   -webkit-box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);  
   box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
+  z-index: 5;
 }
 
 .modal-show {
@@ -1634,10 +1672,10 @@ transform: translate(-50%, 0);
   border-color: #b4b9bb;
 }
 
-.modal-message #message-email:focus {
+.message-name input:focus {
   border-color: #000000;
 }
-.modal-message #message-name:focus {
+.message-email input:focus {
   border-color: #000000;
 }
 
